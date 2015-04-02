@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StackEgg Animations</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="animations.js"></script>
+        <style type="text/css">
+            html {
+                font-family: sans-serif;
+                font-size: 14px;
+            }
+            div, body {
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                margin: 0;
+            }
+            h2, h3 {
+                margin: 1em 0 0;
+            }
+            #container {
+                margin: 50px auto;
+                width: 1000px
+            }
+            #egg {
+                position: relative;
+                width: 228px;
+                height: 298px;
+                background-image: url(egg-trans.png);
+                float: left;
+            }
+            canvas {
+                position: absolute;
+                left: 40px;
+                top: 113px;
+            }
+            #buttons {
+                float: left;
+                margin-left: 50px;
+                width: 722px;
+                line-height: 2;
+            }
+            #buttons button {
+                width: 200px;                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="egg">
+                <canvas width="160" height="80"></canvas>
+            </div>
+            <div id="buttons">
+                <h1>All StackEgg Animations</h1>
+                <h2>Actions</h2>
+                <button data-ani="ask">Ask</button><br>
+                <button data-ani="answer">Answer</button><br>
+                <button data-ani="upvote">Upvote</button><br>
+                <button data-ani="downvote">Downvote</button><br>
+                <button data-ani="close">Close</button><br>
+                <button data-ani="flag">Flag</button><br>
+                <h2>Game phases</h2>
+                <button data-ani="site_is_born">A Site Is Born</button> &ndash; A new game is started.<br>
+                <button data-ani="public_beta">Public Beta</button> &ndash; Private beta is completed.<br>
+                <button data-ani="graduate">Time To Graduate</button> &ndash; Public beta is completed.<br>
+                <button data-ani="you_win">You Win</button> &ndash; The Site has won the internet. (loop)<br>
+                <button data-ani="cry">Failed</button> &ndash; The Site was shut down because of too low stats. (loop)<br>
+                <h2>Other</h2>
+                <button data-ani="idle_egg">Idle</button> &ndash; Played when there is nothing else to be played. (loop)<br>
+                <button data-ani="help">Help!</button> &ndash; One or more stats are critically low. (loop)<br>
+                <button data-ani="goodbye">Good Bye</button> &ndash; Played when April 1st (and thus the game) was over.<br>
+            </div>
+        </div>
+    </body>
+</html>
